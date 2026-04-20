@@ -6,6 +6,7 @@
 <title>Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
 * {
@@ -216,6 +217,41 @@ section {
     line-height: 1.9;
     color: #1a1a1a;
 }
+
+/* CONTACT SECTION STYLING */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1a1a1a;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    width: 30px;
+    text-align: center;
+}
+
+.fa-facebook { color: #1877F2; }
+.fa-instagram { color: #E4405F; }
+.fa-phone { color: #25D366; }
+
 </style>
 </head>
 
@@ -317,8 +353,22 @@ section {
 <section id="contact">
 <div class="container">
     <h1 style="text-align:center;margin-bottom:2rem;">Contact</h1>
-    <div class="center">
-        <p>Contact Section Content Goes Here</p>
+    
+    <div class="contact-list">
+        <a href="#" class="contact-item">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook Account</span>
+        </a>
+
+        <a href="#" class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Account</span>
+        </a>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+63 XXX XXX XXXX</span>
+        </div>
     </div>
 </div>
 </section>
