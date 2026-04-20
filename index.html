@@ -187,21 +187,32 @@ section {
     font-size: 2rem;
 }
 
-/* ABOUT SECTION PHOTO */
-.about-photo {
+/* ABOUT SECTION STYLING */
+.about-placeholder {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 5px solid black;
+    background: #ddd; /* Same as project placeholder */
+    border-radius: 50%; /* Circle shape */
+    margin: 0 auto 2rem auto;
+    overflow: hidden;
 }
 
-.about-text {
-    max-width: 800px;
+.about-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text-content {
+    max-width: 900px;
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    text-align: center;
+}
+
+.about-text-content p {
+    font-size: 1.25rem; /* Increased size for readability */
+    line-height: 1.8;
+    color: #1a1a1a;
 }
 </style>
 </head>
@@ -294,9 +305,11 @@ section {
 </section>
 
 <section id="about">
-<div class="container center">
-    <img src="" alt="About Photo" class="about-photo">
-    <div class="about-text">
+<div class="container">
+    <div class="about-placeholder">
+        <img src="" alt="">
+    </div>
+    <div class="about-text-content">
         <p>My name is Samlee H. Paguntalan and I am a second year student at Central Philippines State University Moises Padilla Campus majoring in Bachelor Of Science In Computer Studies. I chose this field because I’ve always been fascinated by practicing my logic and problem solving skills. My academic strengths are Logics and Programming. After I graduate, I hope to pursue my career in so that i can help my family in future.</p>
     </div>
 </div>
