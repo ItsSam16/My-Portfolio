@@ -73,7 +73,6 @@ nav ul {
     gap: 2rem;
 }
 
-/* NAV EFFECT */
 nav a {
     text-decoration: none;
     color: #1a1a1a;
@@ -103,14 +102,12 @@ nav a.active::before {
 #about { background: #f0faff; }
 #contact { background: #f0fff5; }
 
-/* SECTIONS */
 section {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-/* CONTAINER */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -182,13 +179,7 @@ section {
     font-size: 0.85rem;
 }
 
-/* CENTER TEXT */
-.center {
-    text-align: center;
-    font-size: 2rem;
-}
-
-/* ABOUT SECTION STYLING */
+/* ABOUT SECTION */
 .about-placeholder {
     width: 220px;
     height: 220px;
@@ -218,40 +209,74 @@ section {
     color: #1a1a1a;
 }
 
-/* CONTACT SECTION STYLING */
+/* CONTACT SECTION */
 .contact-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #1a1a1a;
     background: white;
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 50px;
     width: fit-content;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.contact-item i {
-    font-size: 1.5rem;
-    width: 30px;
-    text-align: center;
 }
 
 .fa-facebook { color: #1877F2; }
 .fa-instagram { color: #E4405F; }
 .fa-phone { color: #25D366; }
 
+/* EMAIL FORM STYLING */
+.email-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.email-form-container input, 
+.email-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.email-form-container textarea {
+    height: 120px;
+    resize: none;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #333;
+}
 </style>
 </head>
 
@@ -262,7 +287,6 @@ section {
         <div class="logo">S</div>
         <span>Samlee Paguntalan</span>
     </div>
-
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -277,13 +301,9 @@ section {
     <div class="container home-grid">
         <div class="text-content">
             <h1>Hi i'm Samlee Paguntalan</h1>
-            <p class="highlight-text">
-                Student in Central Philippines State University of Moises Padilla Campus
-            </p>
+            <p class="highlight-text">Student in Central Philippines State University of Moises Padilla Campus</p>
         </div>
-        <div class="image-wrapper">
-            <img src="1.jpg">
-        </div>
+        <div class="image-wrapper"><img src="1.jpg"></div>
     </div>
 </section>
 
@@ -291,49 +311,27 @@ section {
 <div class="container">
 <h1 style="text-align:center;margin-bottom:2rem;">My Projects</h1>
 <div class="projects-grid">
-
-<div class="project-card">
-<h3>Resume</h3>
-<div class="project-image"><img src="Resume.jpg"></div>
-<p>A small data about my self</p>
-<a href="Myresume.pdf" download="Samlee_Paguntalan_Resume">Click here to view</a>
-</div>
-
-<div class="project-card">
-<h3>Brochure</h3>
-<div class="project-image"><img src="Brochure.jpg"></div>
-<p>A tourist brochure for RiceTerraces</p>
-<a href="Brochure.jpg" target="_blank">Click here to view</a>
-</div>
-
-<div class="project-card">
-<h3>Product Wrapper</h3>
-<div class="project-image"><img src="Product_Example.jpg"></div>
-<p>An example of a product wrapper of water bottle that i made</p>
-<a href="Product_Example.jpg" target="_blank">Click here to view</a>
-</div>
-
-<div class="project-card">
-<h3>Certificate 1</h3>
-<div class="project-image"><img src=""></div>
-<p>Short description here</p>
-<a href="#">Click here to view</a>
-</div>
-
-<div class="project-card">
-<h3>Certificate 2</h3>
-<div class="project-image"><img src=""></div>
-<p>Short description here</p>
-<a href="#">Click here to view</a>
-</div>
-
-<div class="project-card">
-<h3>Certificate 3</h3>
-<div class="project-image"><img src=""></div>
-<p>Short description here</p>
-<a href="#">Click here to view</a>
-</div>
-
+    <div class="project-card">
+        <h3>Resume</h3>
+        <div class="project-image"><img src="Resume.jpg"></div>
+        <p>A small data about my self</p>
+        <a href="Myresume.pdf" download="Samlee_Paguntalan_Resume">Click here to view</a>
+    </div>
+    <div class="project-card">
+        <h3>Brochure</h3>
+        <div class="project-image"><img src="Brochure.jpg"></div>
+        <p>A tourist brochure for RiceTerraces</p>
+        <a href="Brochure.jpg" target="_blank">Click here to view</a>
+    </div>
+    <div class="project-card">
+        <h3>Product Wrapper</h3>
+        <div class="project-image"><img src="Product_Example.jpg"></div>
+        <p>An example of a product wrapper of water bottle that i made</p>
+        <a href="Product_Example.jpg" target="_blank">Click here to view</a>
+    </div>
+    <div class="project-card"><h3>Certificate 1</h3><div class="project-image"><img src=""></div><p>Short description here</p><a href="#">Click here to view</a></div>
+    <div class="project-card"><h3>Certificate 2</h3><div class="project-image"><img src=""></div><p>Short description here</p><a href="#">Click here to view</a></div>
+    <div class="project-card"><h3>Certificate 3</h3><div class="project-image"><img src=""></div><p>Short description here</p><a href="#">Click here to view</a></div>
 </div>
 </div>
 </section>
@@ -341,9 +339,7 @@ section {
 <section id="about">
 <div class="container">
     <h1 style="text-align:center;margin-bottom:2rem;">About Me</h1>
-    <div class="about-placeholder">
-        <img src="1.jpg" alt="Profile Photo">
-    </div>
+    <div class="about-placeholder"><img src="1.jpg" alt="Profile Photo"></div>
     <div class="about-text-content">
         <p>My name is Samlee H. Paguntalan and I am a second year student at Central Philippines State University Moises Padilla Campus majoring in Bachelor Of Science In Computer Studies. I chose this field because I’ve always been fascinated by practicing my logic and problem solving skills. My academic strengths are Logics and Programming. After I graduate, I hope to pursue my career in so that i can help my family in future.</p>
     </div>
@@ -355,20 +351,18 @@ section {
     <h1 style="text-align:center;margin-bottom:2rem;">Contact</h1>
     
     <div class="contact-list">
-        <a href="#" class="contact-item">
-            <i class="fab fa-facebook"></i>
-            <span>Facebook Account</span>
-        </a>
+        <a href="#" class="contact-item"><i class="fab fa-facebook"></i><span>Facebook Account</span></a>
+        <a href="#" class="contact-item"><i class="fab fa-instagram"></i><span>Instagram Account</span></a>
+        <div class="contact-item"><i class="fas fa-phone"></i><span>+63 XXX XXX XXXX</span></div>
+    </div>
 
-        <a href="#" class="contact-item">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram Account</span>
-        </a>
-
-        <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <span>+63 XXX XXX XXXX</span>
-        </div>
+    <div class="email-form-container">
+        <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <textarea name="message" placeholder="How can I help you?" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
     </div>
 </div>
 </section>
@@ -380,21 +374,14 @@ const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
     let current = "";
-
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 120;
-        if (scrollY >= sectionTop) {
-            current = section.getAttribute("id");
-        }
+        if (scrollY >= sectionTop) { current = section.getAttribute("id"); }
     });
-
     navLinks.forEach(link => {
         link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
+        if (link.getAttribute("href") === "#" + current) { link.classList.add("active"); }
     });
-
     header.className = current;
 });
 </script>
